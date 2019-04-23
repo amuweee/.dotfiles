@@ -146,13 +146,13 @@ VISUAL=vim; export VISUAL EDITOR=vim; export EDITOR
 
 
 # PS1 colors
-export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
+export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\w\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 
 # powerline
-powerline-daemon -q
-POWERLINE_BASH_CONTINUATION=1
-POWERLINE_BASH_SELECT=1
-. /usr/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
+#powerline-daemon -q
+#POWERLINE_BASH_CONTINUATION=1
+#POWERLINE_BASH_SELECT=1
+#. /usr/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
 
 
 # Import colorscheme from 'wal' asynchronously
@@ -167,3 +167,10 @@ cat ~/.cache/wal/sequences
 source ~/.cache/wal/colors-tty.sh
 
 # wal start
+
+# set key repeat speed and delay
+xset r rate 220 40
+
+alias pia="sh ~/AUR/pia.run"
+
+set -o vi
