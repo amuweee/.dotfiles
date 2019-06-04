@@ -14,7 +14,7 @@ Xft.lcdfilter: lcddefault
 !!XTerm*reverseVideo:      on
 !!XTerm*selectToClipboard: true
 
-Xcursor.theme: xcursor-breeze
+Xcursor.theme: Maia-Cursor
 Xcursor.size:	2
 
 
@@ -42,65 +42,66 @@ URxvt.urlLauncher: chromium
 URxvt.matcher.button: 1
 
 
-URxvt*background:   #1e1f28
-URxvt*foreground:   #ebece6
-URxvt*cursorColor:   #e4e4e4
-URxvt*color0:   #000
-URxvt*color1:   #fb4245
-URxvt*color2:   #50fa7b
-URxvt*color3:   #f0fa8b
-URxvt*color4:   #49b9fe
-URxvt*color5:   #fb4cb3
-URxvt*color6:   #8be9fd
-URxvt*color7:   #ededec
-URxvt*color8:   #555555
-URxvt*color9:   #fb4245
-URxvt*color10:   #50fa7b
-URxvt*color11:   #f0fa8b
-URxvt*color12:   #49b9fe
-URxvt*color13:   #fb4cb3
-URxvt*color14:   #8be9fd
-URxvt*color15:   #ededec
+URxvt*foreground:   #cbe3e7
+URxvt*background:   #1b182c
+URxvt*cursorColor:  #fbfcfc
+URxvt*color0:       #100e23
+URxvt*color8:       #565575
+URxvt*color1:       #ff8080
+URxvt*color9:       #ff5458
+URxvt*color2:       #95ffa4
+URxvt*color10:      #62d196
+URxvt*color3:       #ffe9aa
+URxvt*color11:      #ffb378
+URxvt*color4:       #91ddff
+URxvt*color12:      #65b2ff
+URxvt*color5:       #c991e1
+URxvt*color13:      #906cff
+URxvt*color6:       #aaffe4
+URxvt*color14:      #63f2f1
+URxvt*color7:       #cbe3e7
+URxvt*color15:      #a6b3cc
 
 
-! Special
-*foreground: 		#ffffff
-*foreground_bold: 	#a8a19f
-! *cursor: 		#a8a19f
-*background: 		#1b1918
 
-! Black + DarkGrey
-*color0: 		#363636
-*color8: 		#424242
 
-! DarkRed + Red
-*color1: 		#C37561
-*color9: 		#D19485
 
-! DarkGreen + Green
-*color2: 		#A0A57E
-*color10:		#B6B99D
+! special
+*.foreground:   #cbe3e7
+*.background:   #1b182c
+*.cursorColor:  #fbfcfc
 
-! DarkYellow + Yellow
-*color3: 		#D1A375
-*color11:		#DEBC9C
+! black
+*.color0:       #100e23
+*.color8:       #565575
 
-! DarkBlue + Blue
-*color4: 		#7985A3
-*color12:		#98A1B9
+! red
+*.color1:       #ff8080
+*.color9:       #ff5458
 
-! DarkMagenta + Magenta
-*color5:	 	#AB716D
-*color13:		#BE918E
+! green
+*.color2:       #95ffa4
+*.color10:      #62d196
 
-! DarkCyan + Cyan (both not tango)
-*color6: 		#98B9B1
-*color14:		#CBE6CB
+! yellow
+*.color3:       #ffe9aa
+*.color11:      #ffb378
 
-! LightGrey + White
-*color7: 		#D0D0D0
-*color15:		#E6E6E6
+! blue
+*.color4:       #91ddff
+*.color12:      #65b2ff
 
+! magenta
+*.color5:       #c991e1
+*.color13:      #906cff
+
+! cyan
+*.color6:       #aaffe4
+*.color14:      #63f2f1
+
+! white
+*.color7:       #cbe3e7
+*.color15:      #a6b3cc
 
 
 ! for 'fake' transparency (without Compton) uncomment the following three lines

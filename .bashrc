@@ -155,18 +155,6 @@ export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput se
 #. /usr/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
 
 
-# Import colorscheme from 'wal' asynchronously
-# &   # Run the process in the background.
-# ( ) # Hide shell job control messages.
-(cat ~/.cache/wal/sequences &)
-
-# Alternative (blocks terminal for 0-3ms)
-cat ~/.cache/wal/sequences
-
-# To add support for TTYs this line can be optionally added.
-source ~/.cache/wal/colors-tty.sh
-
-# wal start
 
 # set key repeat speed and delay
 xset r rate 220 40
@@ -174,3 +162,5 @@ xset r rate 220 40
 alias pia="sh ~/AUR/pia.run"
 
 set -o vi
+
+alias ly="lyrics-cli spotify"

@@ -1,5 +1,5 @@
 set mouse=a
-colo monokai
+colorscheme challenger_deep 
 syntax enable
 :filetype indent on
 :filetype plugin on
@@ -34,6 +34,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'vim-airline/vim-airline'
+NeoBundle 'dylanaraps/wal.vim'
 
 
 " My Bundles here:
@@ -50,3 +51,6 @@ filetype plugin indent on
 NeoBundleCheck
 
 " autocmd vimenter * NERDTree
+let g:airline_powerline_fonts = 1
+
+

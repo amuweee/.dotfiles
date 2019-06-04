@@ -8,8 +8,10 @@ set $mod Mod1
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window none
-new_float none
+# new_window none
+# new_float none
+default_border none
+default_floating_border none 
 
 # Hide borders
 hide_edge_borders none
@@ -183,12 +185,14 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open applications on specific workspaces
 assign [class="Chromium"] $ws6
-assign [class="URxvt"] $ws2
+#assign [class="URxvt"] $ws2
 assign [class="Atom"] $ws3
 assign [class="Steam"] $ws4
+assign [class="retroarch"] $ws4
 assign [class="discord"] $ws5
 assign [class="Slack"] $ws5
 assign [class="pia-client"] $ws7
+assign [class="transmission-gtk"] $ws7
 assign [class="qutebrowser"] $ws1
 assign [class="spotify"] $ws8
 
@@ -219,10 +223,14 @@ for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
-#for_window [class="Steam"] floating enable
+for_window [class="Steam"] floating enable
 for_window [class="feh"] floating enable
 for_window [class="pcmanfm"] floating enable
 for_window [class="nm-connection-editor"] floating enable
+for_window [class="transmission-gtk"] floating enable
+for_window [class="visualboyadvance-m"] floating enable
+for_window [class="snes9x-gtk"] floating enable
+for_window [class="retroarch"] floating enable
 
 # switch to workspace with urgent window automatically
 
@@ -333,21 +341,21 @@ set_from_resource $term_color15    color15
 #	i3bar_command i3bar
 #	status_command py3status -c ~/.i3/i3status.conf
 #	position bottom
-
+#
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
 #	tray_output eDP1
-
+#
 #	bindsym button4 nop
 #	bindsym button5 nop
 #	font pango:System San Francisco Display 12
 #	strip_workspace_numbers yes
-
+#
 #    colors {
 #       background #222D31
 #       statusline #F9FAF9
 #        separator  #454947
-
+#
 #                      border  backgr. text
 #        focused_workspace  #F9FAF9 #16a085 #292F34
 #        active_workspace   #595B5B #353836 #FDF6E3
@@ -362,14 +370,14 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #556064 #556064 #80FFF9 #FDF6E3
-  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
-  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-  client.placeholder      #000000 #0c0c0c #ffffff #000000 
-
-  client.background       #2B2C2B
-
+# client.focused          #161720 #556064 #80FFF9 #FDF6E3
+# client.focused_inactive #161720 #161720 #1ABC9C #454948
+# client.unfocused        #161720 #161720 #1ABC9C #454948
+# client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
+# client.placeholder      #000000 #0c0c0c #ffffff #000000 
+#
+# client.background       #161720
+#
 #############################
 ### settings for i3-gaps: ###
 #############################
@@ -432,5 +440,5 @@ mode "$mode_gaps_outer" {
 exec_always --no-startup-id ~/.config/polybar/launch.sh &amp;
 # exec --no-startup-id xautolock -time 30 -locker ~/scripts/lockscript
 exec_always --no-startup-id redshift
-exec_always --no-startup-id blurwal -s 10 -m 2
+# exec_always --no-startup-id blurwal -s 10 -m 1
 # exec_always --no-startup-id ~/AUR/pia-linux-1.1.1-02545.run
