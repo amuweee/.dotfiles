@@ -35,7 +35,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'dylanaraps/wal.vim'
-
+NeoBundle 'gko/vim-coloresque'
 
 " My Bundles here:
 " Refer to |:NeoBundle-examples|.
