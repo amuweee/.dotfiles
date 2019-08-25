@@ -72,3 +72,6 @@ exec $(get_session)
 
 xset +fp /home/mbai/.fonts
 xset fp rehash
+
+xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Speed" 0.40
+xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Profile Enabled" 0 1

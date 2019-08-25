@@ -15,6 +15,9 @@ set cursorline
 set showmatch
 set incsearch
 set hlsearch
+set ignorecase
+set ruler
+set relativenumber
 
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif

@@ -185,6 +185,8 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open applications on specific workspaces
 assign [class="Chromium"] $ws6
+assign [class="brave-browser"] $ws6
+assign [class="Brave-browser"] $ws6
 #assign [class="URxvt"] $ws2
 assign [class="Atom"] $ws3
 assign [class="Steam"] $ws4
@@ -231,6 +233,8 @@ for_window [class="transmission-gtk"] floating enable
 for_window [class="visualboyadvance-m"] floating enable
 for_window [class="snes9x-gtk"] floating enable
 for_window [class="retroarch"] floating enable
+for_window [class="Blueman-manager"] floating enable
+for_window [class="Matplotlib"] floating enable
 
 # switch to workspace with urgent window automatically
 
@@ -297,7 +301,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
-# exec --no-startup-id blueman-applet
+exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 # exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
@@ -383,8 +387,8 @@ bindsym $mod+m bar mode toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 20
-gaps outer 2
+gaps inner 40
+gaps outer 0
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
@@ -438,7 +442,12 @@ mode "$mode_gaps_outer" {
 # Load on start
 # exec_always feh --bg-scale /home/mbai/Pictures/wallpaper.jpg
 exec_always --no-startup-id ~/.config/polybar/launch.sh &amp;
-# exec --no-startup-id xautolock -time 30 -locker ~/scripts/lockscript
+exec --no-startup-id xautolock -time 30 -locker ~/scripts/lockscript
 exec_always --no-startup-id redshift
 # exec_always --no-startup-id blurwal -s 10 -m 1
 # exec_always --no-startup-id ~/AUR/pia-linux-1.1.1-02545.run
+
+
+# trackpoint
+exec --no-startup-id xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Speed" 0.40
+exec --no-startup-id xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Profile Enabled" 0 1

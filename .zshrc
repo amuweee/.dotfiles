@@ -87,11 +87,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+ if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vim'
+ else
+   export EDITOR='mvim'
+ fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -110,7 +110,7 @@ xset r rate 220 40
 
 alias pia="sh ~/AUR/pia.run"
 alias ly="lyrics-cli spotify"
-alias ll="ls -al"
+alias du="cd .."
 
 set -o vi
 
