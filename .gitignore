@@ -176,4 +176,5 @@ rom/
 scripts/
 seaborn-data/
 work/
-
+.vscode/
+.config/Code/

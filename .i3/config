@@ -189,6 +189,7 @@ assign [class="brave-browser"] $ws6
 assign [class="Brave-browser"] $ws6
 #assign [class="URxvt"] $ws2
 assign [class="Atom"] $ws3
+assign [class="Code"] $ws3
 assign [class="Steam"] $ws4
 assign [class="retroarch"] $ws4
 assign [class="discord"] $ws5
