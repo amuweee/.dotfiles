@@ -3,18 +3,18 @@
 
 
 # Except..
-.Xresources
-.bashrc
-.gitignore
-.vimrc
-.xinitrc
-.zshrc
+!.Xresources
+!.bashrc
+!.gitignore
+!.vimrc
+!.xinitrc
+!.zshrc
 
 
 # Sub folders
-.i3/config
-.config/compton.config
-.config/neofetch/config.conf
-.config/polybar/*
-.config/rofi/config.rasi
-.config/rofi/material.rasi
+!.i3/config
+!.config/compton.config
+!.config/neofetch/config.conf
+!.config/polybar/*
+!.config/rofi/config.rasi
+!.config/rofi/material.rasi
