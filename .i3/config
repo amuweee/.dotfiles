@@ -10,7 +10,7 @@ set $mod Mod1
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 # new_window none
 # new_float none
-default_border none
+default_border pixel 2
 default_floating_border none 
 
 # Hide borders
@@ -296,7 +296,8 @@ mode "resize" {
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id nitrogen --restore; sleep 1; compton -f --backend glx
+# exec --no-startup-id nitrogen --restore; sleep 1; 
+exec --no-startup-id compton -f --backend glx
 #exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
@@ -375,11 +376,11 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-# client.focused          #161720 #556064 #80FFF9 #FDF6E3
-# client.focused_inactive #161720 #161720 #1ABC9C #454948
-# client.unfocused        #161720 #161720 #1ABC9C #454948
-# client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-# client.placeholder      #000000 #0c0c0c #ffffff #000000 
+client.focused          $term_color9 $term_color9 $term_color9 $term_color9 
+client.focused_inactive $term_background $term_background $term_background $term_background
+client.unfocused        $term_background $term_background $term_background $term_background
+client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
+client.placeholder      #000000 #0c0c0c #ffffff #000000 
 #
 # client.background       #161720
 #
@@ -441,10 +442,12 @@ mode "$mode_gaps_outer" {
 }
 
 # Load on start
-# exec_always feh --bg-scale /home/mbai/Pictures/wallpaper.jpg
+exec_always feh --bg-scale /home/mbai/Pictures/wallpapers/souredapple_clouds.png
 exec_always --no-startup-id ~/.config/polybar/launch.sh &amp;
 exec --no-startup-id xautolock -time 30 -locker ~/scripts/lockscript
 exec_always --no-startup-id redshift
+exec_always --no-startup-id python ~/scripts/autotiling.py
+# exec_always --no-startup-id autotiling
 # exec_always --no-startup-id blurwal -s 10 -m 1
 # exec_always --no-startup-id ~/AUR/pia-linux-1.1.1-02545.run
 

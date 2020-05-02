@@ -13,6 +13,8 @@
 
 # Sub folders
 !.i3/config
+!.config/*
+.config/*
 !.config/compton.config
 !.config/neofetch/config.conf
 !.config/polybar/*
