@@ -114,6 +114,7 @@ xset r rate 220 40
 alias pia="sh ~/AUR/pia.run"
 alias ly="lyrics-cli spotify"
 alias du="cd .."
+alias fetch="neofetch --w3m /home/mbai/Pictures/wallpapers/FLCL_Canti.jpg"
 
 set -o vi
 
