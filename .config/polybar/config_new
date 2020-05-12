@@ -90,7 +90,7 @@ strip-wsnumbers = true
 enable-scroll = false
 
 label-unfocused-foreground = #ffffff
-label-focused-foreground = #ff45dd 
+label-focused-foreground = #ff5458
 label-urgent-foreground = #fff236
 
 
