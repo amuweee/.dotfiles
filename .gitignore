@@ -18,6 +18,7 @@
 !.config/compton.config
 !.config/neofetch/config.conf
 !.config/polybar/*
+!.config/polybar/scripts/*
 !.config/rofi/config.rasi
 !.config/rofi/material.rasi
 !.config/rofi/carbo.rasi

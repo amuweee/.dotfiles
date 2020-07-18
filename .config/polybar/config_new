@@ -16,10 +16,8 @@
 ;
 ;==========================================================
 
-;=======================================
-
-
-[bar/white]
+;===================TOP BAR======================
+[bar/top]
 
 ;------------;
 ; DIMENSIONS ;
@@ -71,12 +69,30 @@ padding-left = 2
 padding-right = 2
 module-margin = 1.5
 
-modules-left = filesystem volume backlight battery  spotify
+modules-left = filesystem volume backlight battery updates-pacman
 modules-center = i3
-modules-right = wlan cpu memory date time
+modules-right = system-cpu-temppercore cpu memory date time
 
 tray-position = none
 tray-detached = true
+;===================TOP BAR======================
+
+
+
+;===================BOTTOM BAR======================
+[bar/bottom]
+
+inherit = bar/top
+font-2 = Weather Icons:size=12;1
+
+bottom = true
+modules-left = spotify
+modules-center = openweathermap-fullfeatured
+modules-right = wlan vpn-openvpn-isrunning network-localip network-ipinfo
+border-bottom-size = 2
+;===================BOTTOM BAR======================
+
+
 
 ;---------;
 ; MODULES ;
@@ -226,18 +242,10 @@ label-connected =  %downspeed% |  %upspeed%
 [module/spotify]
 type = custom/script
 interval = 1
-format-prefix = " "
+format-prefix = " "
 format = <label>
 exec = python ~/.config/polybar/scripts/spotify_status.py -f '{artist}: {song}'
 format-underline = #1db954
-
-[bar/float]
-
-inherit = bar/white
-
-background = #ffffff
-
-tray-position = center
 
 
 [module/filesystem]
@@ -258,3 +266,51 @@ fixed-values = false
 ; Spacing between entries
 ; Default: 2
 spacing = 4
+
+
+[module/info-redshift-temp]
+type = custom/script
+exec = ~/.config/polybar/scripts/info-redshift-temp.sh
+interval = 5
+
+
+[module/system-cpu-temppercore]
+type = custom/script
+format-prefix = " "
+exec = ~/.config/polybar/scripts/system-cpu-temppercore.sh
+interval = 2
+
+
+[module/network-localip]
+type = custom/script
+exec = ~/.config/polybar/scripts/network-localip.sh
+format-prefix = " "
+interval = 60
+
+
+[module/network-ipinfo]
+type = custom/script
+exec = ~/.config/polybar/scripts/network-ipinfo.sh
+format-prefix = " "
+interval = 60
+
+
+[module/updates-pacman]
+type = custom/script
+exec = ~/.config/polybar/scripts/updates-pacman.sh
+format-prefix = " "
+interval = 600
+
+
+[module/vpn-openvpn-isrunning]
+type = custom/script
+exec = ~/.config/polybar/scripts/vpn-openvpn-isrunning.sh
+format-prefix = " "
+interval = 5
+
+
+[module/openweathermap-fullfeatured]
+type = custom/script
+exec = ~/.config/polybar/scripts/openweathermap-fullfeatured.sh
+interval = 600
+label-font = 3

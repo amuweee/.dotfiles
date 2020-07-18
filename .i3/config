@@ -451,7 +451,7 @@ exec_always --no-startup-id redshift
 exec_always --no-startup-id python ~/scripts/autotiling.py
 # exec_always --no-startup-id autotiling
 # exec_always --no-startup-id blurwal -s 10 -m 1
-# exec_always --no-startup-id ~/AUR/pia-linux-1.1.1-02545.run
+# exec_always --no-startup-id ~/AUR/pia-linux-1.1.1-02545.runi
 
 
 # trackpoint
