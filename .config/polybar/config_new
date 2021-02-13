@@ -56,7 +56,7 @@ font-3 = "Font Awesome 5 Brands:pixelsize=16;3"
 ; COLORS ;
 ;--------;
 
-background = 0
+background = #00ffffff
 foreground = #fffdfb
 border-color = 0
 
@@ -107,7 +107,7 @@ enable-scroll = false
 
 label-unfocused-foreground = #ffffff
 label-focused-foreground = #ff5458
-label-urgent-foreground = #fff236
+label-urgent-foreground = #f1fa8c
 
 
 index-sort = true
@@ -115,10 +115,10 @@ wrapping-scroll = false
 ws-icon-0 = 1;
 ws-icon-1 = 2;
 ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;
-ws-icon-6 = 7;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
 ws-icon-7 = 8;
 ws-icon-default = 
 format = <label-state>
@@ -285,14 +285,14 @@ interval = 2
 type = custom/script
 exec = ~/.config/polybar/scripts/network-localip.sh
 format-prefix = " "
-interval = 60
+interval = 10
 
 
 [module/network-ipinfo]
 type = custom/script
 exec = ~/.config/polybar/scripts/network-ipinfo.sh
 format-prefix = " "
-interval = 60
+interval = 10
 
 
 [module/updates-pacman]
@@ -312,5 +312,5 @@ interval = 5
 [module/openweathermap-fullfeatured]
 type = custom/script
 exec = ~/.config/polybar/scripts/openweathermap-fullfeatured.sh
-interval = 600
+interval = 300
 label-font = 3

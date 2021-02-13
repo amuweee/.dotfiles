@@ -343,6 +343,7 @@ set_from_resource $term_color12    color12
 set_from_resource $term_color13    color13
 set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
+set_from_resource $term_color16    color16
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
  bar {
@@ -378,7 +379,7 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-client.focused          $term_color9 $term_color9 $term_color9 $term_color9 
+client.focused          $term_color16 $term_color16 $term_color9 $term_color16 
 client.focused_inactive $term_background $term_background $term_background $term_background
 client.unfocused        $term_background $term_background $term_background $term_background
 client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
@@ -443,11 +444,16 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-# Load on start
-exec_always feh --bg-scale /home/mbai/Pictures/wallpapers/souredapple_clouds.png
+## WALLPAPERS
+#exec_always feh --bg-scale /home/mbai/Pictures/wallpapers/souredapple_clouds.png
+#exec_always feh --bg-scale /home/mbai/Pictures/wallpapers/cartoon_planets.jpg
+exec_always feh --bg-scale /home/mbai/Pictures/wallpapers/big_sur_morning.jpg
+
+
+## Load on start
 exec_always --no-startup-id ~/.config/polybar/launch.sh &amp;
 exec --no-startup-id xautolock -time 30 -locker ~/scripts/lockscript
-exec_always --no-startup-id redshift
+# exec_always --no-startup-id redshift
 exec_always --no-startup-id python ~/scripts/autotiling.py
 # exec_always --no-startup-id autotiling
 # exec_always --no-startup-id blurwal -s 10 -m 1
@@ -457,3 +463,6 @@ exec_always --no-startup-id python ~/scripts/autotiling.py
 # trackpoint
 exec --no-startup-id xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Speed" 0.45
 exec --no-startup-id xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Profile Enabled" 0 1
+
+# esc-caplock swap
+# xmodmap ~/.Xmodmap

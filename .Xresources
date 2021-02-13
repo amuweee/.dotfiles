@@ -62,6 +62,7 @@ URxvt*color6:       #aaffe4
 URxvt*color14:      #63f2f1
 URxvt*color7:       #cbe3e7
 URxvt*color15:      #a6b3cc
+URxvt*color16:      #50fa7b
 
 
 ! Dracula Xresources palette
@@ -83,6 +84,7 @@ URxvt*color15:      #a6b3cc
 *.color14:    #9AEDFE
 *.color7:     #BFBFBF
 *.color15:    #E6E6E6
+*color16:     #50fa7b
 
 
 ! for 'fake' transparency (without Compton) uncomment the following three lines
