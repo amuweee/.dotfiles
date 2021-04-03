@@ -1,5 +1,5 @@
 set mouse=a
-colorscheme challenger_deep 
+colorscheme dracula
 syntax enable
 :filetype indent on
 :filetype plugin on

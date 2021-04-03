@@ -164,3 +164,4 @@ alias pia="sh ~/AUR/pia.run"
 set -o vi
 
 alias ly="lyrics-cli spotify"
+export PATH=$HOME/.config/nvcode/utils/bin:$PATH

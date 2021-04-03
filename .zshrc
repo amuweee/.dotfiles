@@ -137,3 +137,4 @@ function vi_mode_prompt_info() {
 RPS1='$(vi_mode_prompt_info)'
 RPS2=$RPS1
 
+export PATH=$HOME/.config/nvcode/utils/bin:$PATH

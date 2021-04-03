@@ -22,3 +22,4 @@
 !.config/rofi/config.rasi
 !.config/rofi/material.rasi
 !.config/rofi/carbo.rasi
+!.config/nvim/*

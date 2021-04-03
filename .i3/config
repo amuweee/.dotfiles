@@ -17,9 +17,9 @@ default_floating_border none
 hide_edge_borders none
 
 # change borders
-bindsym $mod+u border none
-bindsym $mod+y border pixel 2
-bindsym $mod+n border normal
+# bindsym $mod+u border none
+# bindsym $mod+y border pixel 2
+# bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -447,7 +447,10 @@ mode "$mode_gaps_outer" {
 ## WALLPAPERS
 #exec_always feh --bg-scale /home/mbai/Pictures/wallpapers/souredapple_clouds.png
 #exec_always feh --bg-scale /home/mbai/Pictures/wallpapers/cartoon_planets.jpg
-exec_always feh --bg-scale /home/mbai/Pictures/wallpapers/big_sur_morning.jpg
+#exec_always feh --bg-scale /home/mbai/Pictures/wallpapers/big_sur_morning.jpg
+#exec_always feh --bg-scale /home/mbai/Pictures/wallpapers/big_sur_colors.jpg
+#exec_always feh --bg-scale /home/mbai/Pictures/wallpapers/big_sur_night.jpg
+exec_always feh --bg-scale /home/mbai/Pictures/wallpapers/big_sur_coastline.jpg
 
 
 ## Load on start
