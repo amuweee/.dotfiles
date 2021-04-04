@@ -1,7 +1,6 @@
 # Ignore all
 *
 
-
 # Except..
 !.Xresources
 !.bashrc
@@ -10,16 +9,38 @@
 !.xinitrc
 !.zshrc
 
-
-# Sub folders
+# i3 config
+!.i3
+.i3/*
 !.i3/config
-!.config/*
+
+# files in root .config
+!.config
 .config/*
 !.config/compton.config
+
+# neofetch 
+!.config/neofetch
+.config/neofetch/*
 !.config/neofetch/config.conf
-!.config/polybar/*
-!.config/polybar/scripts/*
+
+# polybar
+!.config/polybar
+.config/polybar/*
+!.config/polybar/scripts
+
+# rofi
+!.config/rofi
+.config/rofi/*
 !.config/rofi/config.rasi
 !.config/rofi/material.rasi
 !.config/rofi/carbo.rasi
-!.config/nvim/*
+
+# neovim
+!.config/nvim
+.config/nvim/*
+!.config/nvim/themes
+!.config/nvim/general
+!.config/nvim/keys
+!.config/nvim/plug-config
+!.config/nvim/vim-plug

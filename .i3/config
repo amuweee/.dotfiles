@@ -464,7 +464,7 @@ exec_always --no-startup-id python ~/scripts/autotiling.py
 
 
 # trackpoint
-exec --no-startup-id xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Speed" 0.45
+exec --no-startup-id xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Speed" 0.75
 exec --no-startup-id xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Profile Enabled" 0 1
 
 # esc-caplock swap

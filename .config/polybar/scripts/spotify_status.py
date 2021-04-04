@@ -39,7 +39,6 @@ parser.add_argument(
     dest='play_pause_font'
 )
 
-
 args = parser.parse_args()
 
 def fix_string(string):
