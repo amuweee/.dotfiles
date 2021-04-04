@@ -36,6 +36,11 @@
 !.config/rofi/material.rasi
 !.config/rofi/carbo.rasi
 
+# zathura
+!.config/zathura
+.config/zathura/*
+!.config/zathura/zathurarc
+
 # neovim
 !.config/nvim
 .config/nvim/*

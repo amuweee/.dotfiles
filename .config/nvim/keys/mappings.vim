@@ -1,9 +1,6 @@
 " Alternate way to save
 nnoremap <C-s> :w<CR>
 
-" NERDtree
-nnoremap <leader>n :NERDTreeToggle<CR>
-
 " <TAB>: completion.
 " inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 

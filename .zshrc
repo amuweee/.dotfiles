@@ -8,7 +8,7 @@ export ZSH="/home/mbai/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="dracula"
+ZSH_THEME="suvash"
 DRACULA_DISPLAY_CONTExT=1
 DRACULA_DISPLAY_TIME=1
 DRACULA_ARROW_ICON=">>> "
@@ -91,9 +91,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
  if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
+   export EDITOR='nvim'
  else
-   export EDITOR='mvim'
+   export EDITOR='vim'
  fi
 
 # Compilation flags
@@ -138,3 +138,7 @@ RPS1='$(vi_mode_prompt_info)'
 RPS2=$RPS1
 
 export PATH=$HOME/.config/nvcode/utils/bin:$PATH
+
+
+bindkey "^[[1;3D" backward-word              # [Ctrl-LeftArrow] - move backward one word
+bindkey '^[[1;3C' forward-word               # [Ctrl-RightArrow] - move forward one word
