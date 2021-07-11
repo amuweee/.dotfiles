@@ -78,7 +78,13 @@ plugins=(
 	extract
 	copydir
 	colorize
+  zsh-autosuggestions
+  vi-mode
 )
+
+# vi-mode
+VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
+VI_MODE_SET_CURSOR=true
 
 source $ZSH/oh-my-zsh.sh
 
@@ -115,6 +121,8 @@ alias pia="sh ~/AUR/pia.run"
 alias ly="lyrics-cli spotify"
 alias du="cd .."
 alias fetch="neofetch --w3m /home/mbai/Pictures/wallpapers/FLCL_Canti.jpg"
+alias vim="nvim"
+alias vi="nvim"
 
 
 # set cursor styles in command and insert mode

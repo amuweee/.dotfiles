@@ -41,6 +41,11 @@
 .config/zathura/*
 !.config/zathura/zathurarc
 
+# alacritty
+!.config/alacritty
+.config/alacritty/*
+!.config/alacritty/alacritty.yml
+
 # neovim
 !.config/nvim
 .config/nvim/*
